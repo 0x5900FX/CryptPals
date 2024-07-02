@@ -28,33 +28,40 @@ fn single_char_xor(input: &Vec<u8>, key: &u8) -> Vec<u8> {
 
 fn key_frequency()->HashMap<char,f64>{
 let mut map: HashMap<char, f64> = HashMap::new();
-    map.insert('E', 12.02);
-    map.insert('T', 9.10);
-    map.insert('A', 8.12);
-    map.insert('O', 7.68);
-    map.insert('I', 7.31);
-    map.insert('N', 6.95);
-    map.insert('S', 6.28);
-    map.insert('R', 6.02);
-    map.insert('H', 5.92);
-    map.insert('D', 4.32);
-    map.insert('L', 3.98);
-    map.insert('U', 2.88);
-    map.insert('C', 2.71);
-    map.insert('M', 2.61);
-    map.insert('F', 2.30);
-    map.insert('Y', 2.11);
-    map.insert('W', 2.09);
-    map.insert('G', 2.03);
-    map.insert('P', 1.82);
-    map.insert('B', 1.49);
-    map.insert('V', 1.11);
-    map.insert('K', 0.69);
-    map.insert('X', 0.17);
-    map.insert('Q', 0.11);
-    map.insert('J', 0.10);
-    map.insert('Z', 0.07);
-    map.insert(' ', 13.0);
+    map.insert('A', 8.167);
+    map.insert('B', 1.492);
+    map.insert('C', 2.782);
+    map.insert('D', 4.253);
+    map.insert('E', 12.702);
+    map.insert('F', 2.228);
+    map.insert('G', 2.015);
+    map.insert('H', 6.094);
+    map.insert('I', 6.966);
+    map.insert('J', 0.153);
+    map.insert('K', 0.772);
+    map.insert('L', 4.025);
+    map.insert('M', 2.406);
+    map.insert('N', 6.749);
+    map.insert('O', 7.507);
+    map.insert('P', 1.929);
+    map.insert('Q', 0.095);
+    map.insert('R', 5.987);
+    map.insert('S', 6.327);
+    map.insert('T', 9.056);
+    map.insert('U', 2.758);
+    map.insert('V', 0.978);
+    map.insert('W', 2.360);
+    map.insert('X', 0.150);
+    map.insert('Y', 1.974);
+    map.insert('Z', 0.074);
+    map.insert(' ', 0.000);
+    map.insert('.', 0.000);
+    map.insert(',', 0.000);
+    map.insert(';', 0.000);
+    map.insert(':', 0.000);
+    map.insert('\'', 0.000);
+    map.insert('\n', 0.000);
+    map.insert('_', -10.000);
 map
 }
 
