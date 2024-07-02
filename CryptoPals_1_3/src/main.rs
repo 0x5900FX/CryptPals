@@ -1,5 +1,4 @@
 use std::collections::HashMap;
-use std::os::unix::raw::pid_t;
 
 fn hex_to_byte(input: String) -> Vec<u8> {
     hex::decode(input).expect("invalid input")
