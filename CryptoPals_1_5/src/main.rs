@@ -20,12 +20,16 @@ fn repeating_xor(mut key:String, input:&[u8]) ->Vec<u8> {
 
 
 }
+
+
 fn main() {
 
     let key = "ICE".to_string();
     let input = "Burning 'em, if you ain't quick and nimble\nI go crazy when I hear a cymbal".to_string();
 
-    let output = repeating_xor(key, input.as_bytes());
+    let my_word ="Ola Meigos Dumbass".to_string();
+
+    let output = repeating_xor(key, my_word.as_bytes());
     let hex_out = byte_to_hex(&output);
     println!("{}", hex_out);
 
