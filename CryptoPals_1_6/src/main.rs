@@ -1,3 +1,4 @@
+use std::f32;
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 use base64::{Engine as _, engine::{self, general_purpose}, alphabet};
@@ -21,9 +22,18 @@ fn hamming_distance(a: &[u8], b: &[u8]) ->i32{
     let mut distance = 0;
 
     for (i,j) in a.iter().zip(b.iter()) {
-        if i != j {
             distance += (i ^ j).count_ones() as i32;
-        }
     }
     distance
  }
+
+fn guess_key(text: &[u8] , min_keysize: usize, max_keysize: usize) -> u8 {
+    let mut BESTKEY = min_keysize;
+    let mut BEST_DIS = f32::MAX;
+
+for key in min_keysize..=max_keysize{
+
+}
+
+
+}
